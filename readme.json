@@ -1,0 +1,115 @@
+{
+    "ControlesVolumetricos": {
+      "Version": "1.0",
+      "RfcContribuyente": "CABL840215RF4",
+      "RfcRepresentanteLegal": "REPRESENT123",
+      "RfcProveedor": "XAX010101000",
+      "Caracter": "Permisionario",
+      "ModalidadPermiso": "PER11",
+      "NumPermiso": "PL/99999/TRA/2025", 
+      "ClaveInstalacion": "INST-001",
+      "DescripcionInstalacion": "Ducto de Transporte", 
+        "_comentario": "requerido para describir la instalación o proceso donde deban instalarse sistemas de medición",
+      "Geolocalizacion": {
+        "Latitud": 19.4326,
+        "Longitud": -99.1332
+      },
+      "Producto": {
+        "ClaveProducto": "PR07",
+        "ClaveSubProducto": "SP001",
+        "Gasolina": {
+          "ComposOctanajeGasolina": 87,
+          "GasolinaConCombustibleNoFosil": "Sí",
+          "ComposDeCombustibleNoFosilEnGasolina": 10
+        },
+        "MarcaComercial": "MarcaXYZ"
+      },
+      "Ducto": {
+        "ClaveIdentificacionDucto": "DUCT-TRA-0001",
+        "DescripcionDucto": "Ducto de transporte para combustibles",
+        "DiametroDucto": 30,
+        "MedicionDucto": {
+          "SistemaMedicionDucto": "Medidor123",
+          "VigenciaCalibracionSistMedicionDucto": "2024-12-31"
+        },
+        "Recepciones": {
+          "TotalRecepciones": 2,
+          "SumaVolumenRecepcion": 100000.0,
+          "TotalDocumentos": 2,
+          "Recepcion": [
+            {
+              "NumeroDeRegistro": "001",
+              "VolumenPuntoEntrada": 50000.0,
+              "VolumenRecepcion": 50000.0,
+              "Temperatura": 20,
+              "PresionAbsoluta": 1.5,
+              "FechaYHoraInicioRecepcion": "2023-11-01T08:00:00-06:00",
+              "FechaYHoraFinalRecepcion": "2023-11-01T10:00:00-06:00",
+              "Complemento": {
+                "UUID": "CFDI1234567890UUID",
+                "Pedimento": "A1234567890",
+                "PermisoProveedor": "PERM12345",
+                "PrecioCompra": 50000.0,
+                "PrecioVenta": 55000.0
+              }
+            }
+          ]
+        },
+        "Entregas": {
+          "TotalEntregas": 1,
+          "SumaVolumenEntregado": 50000.0,
+          "TotalDocumentos": 1,
+          "Entrega": {
+            "NumeroDeRegistro": "1001",
+            "VolumenEntregado": 50000.0,
+            "Temperatura": 19,
+            "PresionAbsoluta": 1.4,
+            "FechaYHoraInicialEntrega": "2023-11-01T17:00:00-06:00",
+            "FechaYHoraFinalEntrega": "2023-11-01T18:30:00-06:00",
+            "Complemento": {
+              "UUID": "CFDI0987654321UUID",
+              "Pedimento": "B1234567890",
+              "PermisoProveedor": "PERM67890",
+              "PrecioCompra": 50000.0,
+              "PrecioVenta": 55000.0
+            }
+          }
+        }
+      },
+      "BitacoraMensual": {
+        "Evento": {
+          "NumeroRegistro": "0001",
+          "FechaYHoraEvento": "2023-11-01T12:00:00-06:00",
+          "TipoEvento": "Operación",
+          "DescripcionEvento": "Inicio de actividad de recepción",
+          "UsuarioResponsable": "Usuario1"
+        }
+      },
+      "ComplementoTransporte": {
+        "TERMINALALMYDIST": {
+          "TerminalAlmYDist": "Terminal XYZ",
+          "PermisoAlmYDist": "PERM123456"
+        },
+        "TRASVASE": {
+          "NombreTrasvase": "Empresa ABC S.A.",
+          "RfcTrasvase": "ABC123456789",
+          "PermisoTrasvase": "TRV12345",
+          "DescripcionTrasvase": "Puerto ZZZ",
+          "CfdiTrasvase": "CFDI1234567890UUID"
+        },
+        "DICTAMEN": {
+          "RfcDictamen": "LAB123456789",
+          "LoteDictamen": "LOTE123",
+          "NumeroFolioDictamen": "LAB12345678900012023",
+          "FechaEmisionDictamen": "2023-11-01",
+          "ResultadoDictamen": "Octanaje aceptable"
+        },
+        "NACIONAL": {
+          "RfcCliente": "RFC789456123",
+          "NombreCliente": "Cliente Nacional XYZ S.A.",
+          "PermisoProveedor": "PROV001",
+          "PrecioDeVentaAlPublico": 52000.0
+        }
+      }
+    }
+  }
