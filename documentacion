@@ -1,0 +1,16 @@
+1. Estructura General del XML
+Encabezado del Archivo: Incluye la versión, RFC del contribuyente, características, y permisos otorgados. Estos deben ser precisos y actualizados, ya que identifican al transportista y su autorización para operar.
+Producto y Subproductos: Se especifican los hidrocarburos o petrolíferos transportados, con detalles como octanaje y, si corresponde, el contenido de biocombustible. Cada producto debe identificarse con una clave específica.
+Medición: Datos de los sistemas de medición utilizados, como calibración, para asegurar la exactitud en la medición de volúmenes.
+
+
+2. Recepciones y Entregas
+Sección de Recepciones: Detalla los volúmenes recibidos, con temperatura, presión y otros datos que ayudan a precisar la cantidad efectiva de producto al inicio del proceso.
+Sección de Entregas: Contiene información de los volúmenes entregados al finalizar el transporte, incluyendo el ajuste de temperatura y presión al volumen final.
+Complemento: Cada registro de recepción o entrega puede incluir un complemento con el UUID del CFDI correspondiente y el número de pedimento si el producto fue importado. Este detalle asegura la trazabilidad fiscal de cada operación.
+
+
+3. Complemento de Transporte
+Terminal de Almacenamiento y Distribución: Si aplica, identifica la terminal donde se recibe o entrega el producto. Incluye el número de permiso de la CRE y otros detalles específicos de la terminal.
+Trasvase: Si se realiza trasvase, se debe especificar el nombre de la empresa, el RFC, y el permiso otorgado, junto con el UUID del CFDI asociado al servicio.
+Dictamen y Certificado: Requerido si se realizan análisis de calidad, como el octanaje. Incluye el RFC del laboratorio o proveedor del dictamen, número de lote, y resultados.
